@@ -1,0 +1,27 @@
+Source: pydbus
+Maintainer: Janusz Lewandowski <lew21@xtreeme.org>
+Section: python
+Priority: optional
+Build-Depends: dh-python, python-setuptools (>= 0.6b3), python3-setuptools, python-all (>= 2.6.6-3), python3-all, debhelper (>= 9), python-gi, python3-gi
+Standards-Version: 3.9.6
+Homepage: https://github.com/LEW21/pydbus
+
+Package: python-pydbus
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-gi
+Description: Pythonic DBus library (Python 2)
+ PyDBus is a modern, pythonic D-Bus library built on top of PyGI and
+ GDBus.  It is based on PyGI_, the Python GObject Introspection
+ bindings, which is the recommended way to use GLib from Python.
+ .
+ This package installs the library for Python 2.
+  
+Package: python3-pydbus
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-gi
+Description: Pythonic DBus library (Python 3)
+ PyDBus is a modern, pythonic D-Bus library built on top of PyGI and
+ GDBus.  It is based on PyGI_, the Python GObject Introspection
+ bindings, which is the recommended way to use GLib from Python.
+ .
+ This package installs the library for Python 3.
